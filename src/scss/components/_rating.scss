@@ -1,0 +1,57 @@
+.rating {
+	&__item {
+		position: relative;
+		border-radius: 50%;
+		border: 2px solid $persian-green;
+		width: 16px;
+		height: 16px;
+
+		&::after {
+			content: "";
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			top: 2px;
+			left: 2px;
+		}
+
+		&.full {
+			&::after {
+				border-radius: 50%;
+				background-color: $persian-green;
+			}
+		}
+
+		&.empty {
+			&::after {
+				border-radius: 50%;
+				background-color: transparent;
+			}
+		}
+
+		&.half {
+			&::after {
+				width: 4px;
+				height: 8px;
+				border-radius: 8px 0 0 8px;
+				background-color: $persian-green;
+			}
+		}
+	}
+
+	span {
+		display: flex !important;
+		max-width: 96px;
+		width: 100%;
+		justify-content: space-between;
+
+		span {
+			flex: 0 0 16px;
+			width: 16px;
+			height: 16px;
+			&:not(:last-child) {
+				margin-right: 5px;
+			}
+		}
+	}
+}

@@ -1,0 +1,182 @@
+@media only screen and (max-width: 1440px) {
+	.main {
+		padding: 60px 0;
+	}
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+	.container {
+		padding: 0 10px;
+	}
+
+	.header__left {
+		width: 100%;
+		justify-content: space-between;
+		flex-direction: row-reverse;
+
+		.menu-icon {
+			margin-right: 0;
+		}
+	}
+
+	.nav {
+		display: none;
+	}
+
+	.main {
+		padding: 40px 0;
+
+		&__img {
+			display: none;
+		}
+	}
+
+	.search {
+		display: flex;
+		justify-content: center;
+
+		max-width: 100%;
+		width: 100%;
+
+		&__wrapper {
+			max-width: 580px;
+			flex: 1 0;
+		}
+	}
+}
+
+
+@media only screen and (max-width: 768px) {
+	.container__full {
+		display: none;
+	}
+
+	.main {
+		&__popular {
+			padding: 0 0 40px 0;
+		}
+	}
+
+	.footer {
+		&__top,
+		&__bottom {
+			flex-direction: column;
+		}
+
+		&__top {
+			padding: 40px 0;
+		}
+
+		&__about {
+			margin-bottom: 40px;
+		}
+
+		&__nav {
+			padding-top: 0;
+		}
+
+		&__payments {
+			margin-top: 10px;
+		}
+	}
+
+}
+
+@media only screen and (max-width: 568px) {
+	.flex {
+		&.d-flex-col {
+			flex-direction: column;
+		}
+	}
+
+	.search {
+		&__form-filed {
+			&.mr-15 {
+				margin-right: 0;
+			}
+		}
+	}
+
+
+	.footer {
+		&__nav {
+			flex-direction: column;
+		}
+
+		&__nav-item {
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 414px) {
+
+	.search {
+		&__title {
+			font-size: 24px;
+			line-height: 34px;
+		}
+
+		&__tab-item {
+			.normal {
+				display: none;
+			}
+
+			.mobile {
+				display: inline-block;
+			}
+		}
+	}
+
+	.main {
+		&__popular-title {
+			font-size: 24px;
+			line-height: normal;
+		}
+	}
+
+	.footer {
+		&__payments {
+			justify-content: space-between;
+		}
+
+		&__payments-item {
+			&:not(:last-child) {
+
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.search {
+		&__form-input {
+			padding-left: 45px;
+		}
+
+		&__icon {
+			left: 10px;
+		}
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.card {
+		&__title {
+			width: 290px;
+		}
+		
+		&__popular {
+			width: 290px;
+		}
+
+		&__popular-img {
+			width: 290px;
+		}
+	}
+}

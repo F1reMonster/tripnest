@@ -1,0 +1,58 @@
+.header {
+	height: 80px;
+	border-bottom: 1px solid #eee;
+
+	.container {
+		height: 100%;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+	}
+
+	&__left {
+		display: flex;
+		align-items: center;
+
+		.menu-icon {
+			margin-right: 30px;
+			cursor: pointer;
+		}
+	}
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 50px;
+		}
+	}
+}
+
+.currency,
+.customer-service,
+.saved-accomdations {
+	span {
+		margin-left: 10px;
+	}
+}
+
+.logo {
+	span {
+		margin-right: 10px;
+		font-size: 24px;
+		font-weight: 700;
+	}
+}
+
+.create-account {
+	.btn {
+		padding: 14px 23px;
+	}
+}

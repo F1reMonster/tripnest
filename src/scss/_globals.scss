@@ -1,0 +1,79 @@
+// globals styles
+@import "../../node_modules/normalize.css/normalize";
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  color: $primary;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: $primary;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  &__full {
+    border-top: 2px solid $link-water;
+    border-bottom: 2px solid $link-water;
+  }
+
+}
+
+.btn {
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  outline: none;
+  color: $white;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.br-2 {
+
+  border-right: 2px solid $gray !important;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
