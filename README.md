@@ -1,4 +1,3 @@
-# demo http://react.khorol.com.ua
 
 # Getting Started with Create React App
 
